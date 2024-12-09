@@ -1,0 +1,39 @@
+ <form onSubmit={handleSignup}>
+          <div className={styles.formGroup}>
+            <label htmlFor="name" className={styles.label}>Name</label>
+            <input
+              onChange={handleChange}
+              type="text"
+              name="name"
+              placeholder="Enter your name..."
+              value={signUpInfo.name}
+              className={styles.input}
+            />
+          </div>
+          <div className={styles.formGroup}>
+            <label htmlFor="email" className={styles.label}>Email</label>
+            <input
+              onChange={handleChange}
+              type="email"
+              name="email"
+              placeholder="Enter your email..."
+              value={signUpInfo.email}
+              className={styles.input}
+            />
+          </div>
+          <div className={styles.formGroup}>
+            <label htmlFor="password" className={styles.label}>Password</label>
+            <input
+              onChange={handleChange}
+              type="password"
+              name="password"
+              placeholder="Enter your password..."
+              value={signUpInfo.password}
+              className={styles.input}
+            />
+          </div>
+          <button type="submit" className={styles.button}>Signup</button>
+          <span className={styles.footerText}>
+            Already signed up? <Link to="/login" className={styles.link}>Login</Link>
+          </span>
+        </form>

@@ -1,0 +1,154 @@
+/* Container */
+.order-confirmation-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(to right, #f9f9f9, #fff);
+    border-radius: 12px;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Outer shadow on the container */
+  }
+  
+  /* Title Styles */
+  .order-confirmation-container h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #6f4f28; /* Coffee color */
+    padding-bottom: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for title */
+  }
+  
+  /* Paragraph Styles */
+  .order-confirmation-container p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    text-align: center;
+    font-style: italic;
+    color: #666;
+  }
+  
+  /* Order Details Heading */
+  .order-confirmation-container h3 {
+    font-size: 1.6rem;
+    color: #2c3e50;
+    margin-top: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #6f4f28; /* Coffee color */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Items List */
+  .order-confirmation-container h4 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-top: 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #6f4f28; /* Coffee color */
+    letter-spacing: 1px;
+  }
+  
+  /* Item List Styles */
+  .order-confirmation-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .order-confirmation-container ul li {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Outer shadow for each item */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .order-confirmation-container ul li:nth-child(even) {
+    background-color: #ecf0f1;
+  }
+  
+  .order-confirmation-container ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Hover effect for stronger shadow */
+  }
+  
+  .order-confirmation-container ul li span {
+    font-weight: bold;
+    color: #2980b9;
+  }
+  
+  .order-confirmation-container ul li .price {
+    color: #e74c3c;
+  }
+  
+  /* Address Styles */
+  .order-confirmation-container p strong {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1rem;
+  }
+  
+  /* Button Styles (if any action button) */
+  .order-confirmation-container .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #6f4f28; /* Coffee color */
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Outer shadow for button */
+  }
+  
+  .order-confirmation-container .btn:hover {
+    background-color: #5a3e21; /* Darker coffee color */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .order-confirmation-container {
+      padding: 20px;
+    }
+  
+    .order-confirmation-container h2 {
+      font-size: 2rem;
+    }
+  
+    .order-confirmation-container p {
+      font-size: 0.9rem;
+    }
+  
+    .order-confirmation-container h3 {
+      font-size: 1.4rem;
+    }
+  
+    .order-confirmation-container ul li {
+      font-size: 0.9rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .order-confirmation-container .btn {
+      width: 100%;
+    }
+  }
+  
